@@ -527,8 +527,9 @@ public class MainActivitySSB extends AppCompatActivity {
             wifiManager.reconnect();
 
             p.dismiss();
-            Intent i = new Intent(getApplicationContext(), HomeSSB.class);
-            startActivity(i);
+            onBackPressed();
+            //Intent i = new Intent(getApplicationContext(), HomeSSB.class);
+            //startActivity(i);
         }
     }
 
